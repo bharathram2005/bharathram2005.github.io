@@ -1,0 +1,46 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	 <title>Online Calculator(Homework)</title>
+</head>
+<input type="text" name="Number1" id="num1">
+<br>
+<input type="text" name="Number2" id="num2">
+<br>
+<input type="button" name="eq" value="*" onclick="calculate('m')">
+<input type="button" name="eq2" value="/" onclick="calculate('d')">
+<input type="button" name="eq3" value="+" onclick="calculate('a')">
+<input type="button" name="eq4" value="-" onclick="calculate('s')">
+<p id="result"></p>
+
+<script type="text/javascript">
+function calculate(operation)
+{
+
+var num1 = document.getElementById('num1').value;
+var num2 = document.getElementById('num2').value;
+var myresult = "The answer is ";
+if (operation == 'm') {
+	// Operation is Multiplication
+   myresult = myresult + num1 * num2 ;
+}
+else if (operation == 'd') {
+	// Operation is Division
+  myresult = myresult + num1/num2 ;
+}
+else if (operation == 'a') {
+	//Operation is Addition
+	var mysum = parseInt(num1) + parseInt(num2);
+	myresult = myresult + mysum;
+}
+else{
+	//Operation is Subtraction
+	myresult = myresult + (num1 - num2);
+}
+document.getElementById('result').innerHTML = myresult;
+}	
+
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+body
+{
+	background-color: #42f4d4;
+}
+
+h1
+{
+	font-family: Cambria Math;
+	color: indigo;
+	text-align: center;
+
+}
+
+h2
+{
+	font-family: sans-serif;
+	color: #5042f4;
+    text-align: center;
+
+}
+
+h3
+{
+	font-family: verdana;
+	font-size: 20px;
+	color: #fc9b00;
+}
+
+h4
+{
+	font-family: algerian;
+	font-size: 80px;
+	text-align: center
+}
+

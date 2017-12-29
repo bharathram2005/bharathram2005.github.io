@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html>
+
+<head>
+	 <title>HTML Adventure Part 2!</title>
+</head>
+
+<input type="text" name="rad" id="radius">
+
+<br>
+
+<input type="button" name="Submit!" value="Submit!" onclick="calc()">
+
+<p id="result"> </p>
+<script type="text/javascript">
+
+function calc()
+{
+
+var r = document.getElementById('radius').value;
+
+var result = 2 * 3.14159 * r ;
+
+document.getElementById('result').innerHTML = result;
+
+}	
+
+</script>
+
+
+
+</html>

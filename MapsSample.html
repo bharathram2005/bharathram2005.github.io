@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Maps Application!</title>
+	<style type="text/css">
+		#map
+		{
+			height: 400px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<h1>Detroit's Map!</h1>
+<div id = "map"></div>
+<script type="text/javascript">
+
+
+	function initMap()
+	{
+		var detroit = {lat: 42.3314 , lng: -83.0458};
+
+		var shakeshack = {lat:42.331111, lng: -83.045930};
+
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: 15 , center: detroit, maptypeId: 'satellite'}) ; 
+ 
+		var marker = new google.maps.Marker({position: shakeshack , map: map}) ; 
+	}
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRRHQard8PSlH3Cql108co5UpJm4vI4m8&callback=initMap"> </script>
+</body>
+</html>

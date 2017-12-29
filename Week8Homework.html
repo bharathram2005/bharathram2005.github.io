@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Week 8 Homework!</title>
+	<style type="text/css">
+		#map
+		{
+			height: 400px;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<h1>Naples' Map!</h1>
+<div id = "map"></div>
+<script type="text/javascript">
+
+
+	function NaplesMap()
+	{
+		var Naples = {lat: 26.2670 , lng: -81.7896};
+
+		var publiclibrary = {lat:26.2334, lng: -81.7725};
+
+		var map = new google.maps.Map(document.getElementById('map'), {zoom: 12 , center: Naples, mapTypeId: 'roadmap'}) ; 
+ 
+		var marker = new google.maps.Marker({position: publiclibrary , map: map}) ; 
+	}
+</script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRRHQard8PSlH3Cql108co5UpJm4vI4m8&callback=NaplesMap"> </script>
+</body>
+</html>
